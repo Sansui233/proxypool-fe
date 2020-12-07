@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+$primary: #36ADBA;
+$body-background-color: hsl(0, 0%, 21%);
+$body-color: #EFF0EB;
+$card-background-color: hsl(0, 0%, 32%);
+$card-color: $body-color;
+$warning: #e0c40f;
+$scheme-invert-bis:hsl(0, 0%, 17%);
+$link: #3b9de4;
+$link-hover: #36cada;
+$is-danger-dark:#CC656B;
+$is-danger-dark-bg:#462b2e;
+$is-info-dark:#8BA7BB;
+$is-info-dark-bg:#313b4a;
+// Import Bulma
+@import "../node_modules/bulma/bulma.sass";
+
+a {
+    &:hover {
+        color: $link-hover;
+    }
+}
+
+.navbar-menu {
+    background-color: $primary;
+}
+
+a.navbar-item:hover {
+    background-color: $card-background-color;
+    color: unset;
+}
+
+.navbar-item,
+.navbar-link {
+    color: $body-color;
+}
+
+.card {
+    background-color: $card-background-color;
+    color: $card-color;
+}
+
+.card-header-title {
+    color: $card-color;
+}
+
+.message {
+    &.is-info .message-body {
+    	border-color: $is-info-dark;
+    	color: $is-info-dark;
+    	background-color: $is-info-dark-bg;
+    }
+    &.is-danger .message-body{
+    	border-color: $is-danger-dark;
+    	color: $is-danger-dark;
+    	background-color: $is-danger-dark-bg;
+    }
+}
+.table {
+    background-color: $body-background-color;
+
+    th,
+    td {
+        color: $card-color;
+        border-color: hsl(0, 0%, 40%);
+    }
+}
+
+.table thead td, .table thead th {
+    color: $body-color;
+}
+
+hr {
+    background-color: $card-background-color;
+}
+
+.footer {
+    background-color: $scheme-invert-bis;
+}
