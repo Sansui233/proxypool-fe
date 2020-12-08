@@ -1,34 +1,30 @@
 @charset "utf-8";
 
 $primary: #36ADBA;
-$body-background-color: hsl(0, 0%, 21%);
 $body-color: #EFF0EB;
 $card-background-color: hsl(0, 0%, 32%);
 $card-color: $body-color;
 $warning: #e0c40f;
-$scheme-invert-bis:hsl(0, 0%, 17%);
 $link: #3b9de4;
 $link-hover: #36cada;
 $is-danger-dark:#CC656B;
 $is-danger-dark-bg:#462b2e;
 $is-info-dark:#8BA7BB;
 $is-info-dark-bg:#313b4a;
+$scheme-main: hsl(0, 0%, 21%);
+$scheme-main-bis: hsl(0, 0%, 28%);
+$scheme-main-ter: hsl(0, 0%, 32%);
+$scheme-invert: hsl(0, 0%, 90%);
+$scheme-invert-bis: hsl(0, 0%, 87%);
+$scheme-invert-ter: hsl(0, 0%, 84%);
 // Import Bulma
 @import "../node_modules/bulma/bulma.sass";
+
 
 a {
     &:hover {
         color: $link-hover;
     }
-}
-
-.navbar-menu {
-    background-color: $primary;
-}
-
-a.navbar-item:hover {
-    background-color: $card-background-color;
-    color: unset;
 }
 
 .navbar-item,
@@ -37,7 +33,6 @@ a.navbar-item:hover {
 }
 
 .card {
-    background-color: $card-background-color;
     color: $card-color;
 }
 
@@ -58,8 +53,6 @@ a.navbar-item:hover {
     }
 }
 .table {
-    background-color: $body-background-color;
-
     th,
     td {
         color: $card-color;
@@ -73,8 +66,4 @@ a.navbar-item:hover {
 
 hr {
     background-color: $card-background-color;
-}
-
-.footer {
-    background-color: $scheme-invert-bis;
 }
