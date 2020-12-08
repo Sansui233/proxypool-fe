@@ -1,3 +1,4 @@
-!css/*
-!scss/*
-!package.json
+*.html
+*.yaml
+*.conf
+node_modules/*
