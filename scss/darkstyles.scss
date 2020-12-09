@@ -52,6 +52,11 @@ a {
     	background-color: $is-danger-dark-bg;
     }
 }
+
+.notification {
+    background-color: $card-background-color;
+}
+
 .table {
     th,
     td {
